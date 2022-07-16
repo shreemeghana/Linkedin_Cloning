@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    .navbar {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .d1 {
+        display: block;
+        margin-left: 55px;
+        margin-top: 20px;
+
+    }
+
+    .d2 {
+        margin: 10px;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .btn hover {
+        box-shadow: 5px 5px 5px 5px grey;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .bb1 {
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 10px;
+        background-color: 9999FF;
+        font-size: x-large;
+        margin: 10px;
+    }
+
+    .bb1:hover {
+        background-color: transparent;
+        text-decoration: underline;
+
+    }
+    li{
+        list-style: none;
+        font-size: small;
+        padding:10px
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <div class="logo" style="margin-left:80px; margin-top:20px;">
+            <img src="logo.jpg" height="100px" width="`100px" alt="">
+        </div>
+        <div class="icons">
+            <div class="d1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16" style="margin-left:16px">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+                <p>Discover</p>
+            </div>
+
+
+            <div class="d1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-people-fill" viewBox="0 0 16 16" style="margin-left:13px">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    <path fill-rule="evenodd"
+                        d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                </svg>
+                <p>People</p>
+            </div>
+
+
+            <div class="d1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book"
+                    viewBox="0 0 16 16" style="margin-left:19px">
+                    <path
+                        d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                </svg>
+                <p>Learning</p>
+            </div>
+
+
+            <div class="d1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                    viewBox="0 0 16 16" style="margin-left:9px">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+                <p>Jobs</p>
+            </div>
+
+            <div class="d1" style="margin-left:13px">
+                <div class="vr" style=" margin-top:6px;height:45px"></div>
+            </div>
+
+            <div class="d1" style="margin-right:60px; margin-left:20px;">
+                <button class="btn">Join Now</button>
+                <button class="btn btn-outline-primary" style="border-radius:20px; width:100px; font-weight:bold"><a
+                        href="signin.html">Sign In</a></button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <div class="row m-0">
+        <div class="col-sm-6">
+            <h1 style="color:brown; font-weight: 200;">Welcome to your <br>professional <br> community</h1><br>
+            <button type="button" class="btn btn-outline-light"
+                style="color:black; width:370px;text-align:left;font-size: large;">Search for a job
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;></button> <br><br>
+            <button type="button" class="btn btn-outline-light"
+                style="color:black; width:370px;text-align:left;font-size: large">Find a person you know
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;></button> <br><br>
+            <button type="button" class="btn btn-outline-light"
+                style="color:black; width:370px;text-align:left;font-size: large">Learn a new skill
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;></button> <br><br>
+
+        </div>
+        <div class="col-sm-6 p-0">
+            <img src="https://static-exp1.licdn.com/sc/h/dxf91zhqd2z6b0bwg85ktm5s4" alt="" width="650px">
+        </div>
+
+    </div>
+
+    <div class="row" style="background-color: lavender; padding:40px">
+        <div class="col-5" style="padding:75px;">
+            <h1 style="font-weight: 100;">Explore topics you <br> are interested in</h1>
+        </div>
+        <div class="col-7">
+            <DIV class="c1">
+                <p style="font-weight: bold; margin:10px">CONTENT TOPICS</p>
+            </DIV>
+
+            <div class="c2">
+                <button class="bb1" style="background-color: white;">See All Topics</button>
+                <button class="bb1">Science and Environment</button><br>
+                <button class="bb1">Marketting and Advertising</button>
+                <button class="bb1">Sales and Retail</button>
+                <button class="bb1">Technology</button> <br>
+                <button class="bb1">Finance and Economy</button>
+                <button class="bb1">Health</button>
+                <button class="bb1">Business and Management</button> <br>
+                <h6 style="margin:10px">Show more ></h6>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row" style="background-color: white; padding:40px">
+        <div class="col-5" style="padding:75px;">
+            <h1 style="font-weight: 100;">Find the right job or <br> internship for you</h1>
+        </div>
+        <div class="col-7">
+            <DIV class="c1">
+                <p style="font-weight: bold; margin:10px">SUGGESTED SEARCHES</p>
+            </DIV>
+
+            <div class="c2">
+                <button class="bb1">Engineering</button>
+                <button class="bb1">Business Development</button>
+                <button class="bb1">Finance</button><br>
+                <button class="bb1">Administrative Assistant</button>
+                <button class="bb1">Retail Associate</button><br>
+                <button class="bb1">Customer Service</button>
+                <button class="bb1">Operations</button>
+                <button class="bb1">Information Technology</button><br>
+                <button class="bb1">Marketing</button>
+                <button class="bb1">Human Resources</button> <br>
+
+                <h6 style="margin:10px">Show more ></h6>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" style="background-color: lavender; padding:100px;">
+
+        <div class="col-6" style="padding-top:50px">
+          <h1 style="color:blue;font-weight: 100;">Let the right people know <br> you’re open to work </h1><br>
+           <h3 style="color:grey;font-weight: 100;"> With the Open To Work feature, you can <br> privately tell recruiters or publicly share <br> with the LinkedIn community that you are <br> looking for new job opportunities.</h3>
+        </div>
+        <div class="col-6"style='padding-left:40px'>
+            
+            <img src="https://static-exp1.licdn.com/sc/h/dbvmk0tsk0o0hd59fi64z3own" height='500px' width="500px" alt="">
+
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-6"style="padding-left:100px">   
+            <img src="https://static-exp1.licdn.com/sc/h/b1fxwht7hdbeusleja7ciftsj" alt=""height="400" width="400" >
+            <h1 style="font-weight: 100;">Connect with people <br> who can help</h1>
+            <button class="bb1" style="font-size: medium; background-color: white;">Find people you know </button>
+
+        </div>
+        <div class="col-6 "style="padding-left:100px">
+            <img src="https://static-exp1.licdn.com/sc/h/dkfub4sc7jgzg3o31flfr91rv" alt=""height="400" width="400" >
+            <h1 style="font-weight: 100;">Learn the skills you <br> need to succeed</h1>
+            <button class="btn btn-outline-dark">Choose a topic to learn about</button>
+
+        </div>
+    </div>
+
+    <div class="row" style="background-color: lavender;">
+        <div class="col-4" style="text-align:center;">
+           <img src="logo.jpg" height="50px" width="150px" alt="">
+        </div>
+
+        <div class="col-2">
+       <ul>
+           <li style="font-weight: bold">General</li>
+           <li>Sign Up</li>
+           <li>Help Center</li>
+           <li>About</li>
+           <li>Press</li>
+           <li>Blog</li>
+           <li>Careers</li>
+           <li>Developers</li>
+       </ul>
+        </div>
+
+
+        <div class="col-2">
+            <ul>
+                <li style="font-weight: bold">Browse LinkedIn</li>
+                <li>Learning</li>
+                <li>Jobs</li>
+                <li>Sales</li>
+                <li>Mobile</li>
+                <li>Services</li>
+                <li>Products</li>
+            </ul>
+
+        </div>
+
+        <div class="col-2">
+            <ul>
+                <li style="font-weight: bold">Business Solutions</li>
+                <li>Talent</li>
+                <li>Marketing</li>
+                <li>Sales</li>
+                <li>Learning</li>
+                
+            </ul>
+
+        </div>
+
+        
+
+        <div class="col-2">
+          <ul>
+              <li style="font-weight: bold">Directories</li>
+              <li>Members</li>
+              <li>Jobs</li>
+              <li>Companies</li>
+              <li>Featured</li>
+              <li>Learning</li>
+              <li>Posts</li>
+              <li>Articles</li>
+              <li>Schools</li>
+              <li>News</li>
+              <li>News Letters</li>
+              <li>Services</li>
+              <li>Interview Prep</li>
+              <li>products</li>
+              <li>Content Topics</li>
+          </ul>
+        </div>
+    </div>
+
+    <div style="display:flex; padding-left:10px" >
+        <li><img src="logo.jpg" height="50px" width="100px" alt="" style="padding:10px"></li>
+        <li>2022</li>
+        <li>About</li>
+        <li>Accessibility</li>
+        <li>User Agreement</li>
+        <li>Privacy Policy</li>
+        <li>Cookie Policy</li>
+        <li>Copyright Policy</li>
+        <li>Brand Policy</li>
+        <li>Guest Controls</li>
+        <li>Community Guidelines</li>
+
+    </div>
+
+</body>
+
+</html>
